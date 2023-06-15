@@ -1,0 +1,41 @@
+ul li{
+    list-style: none;
+    font-size: 15px;
+    padding: 5px 5px 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+ul li::before{
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50px;
+    background-image: url(imagenes/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    left: 0px;
+    transform: translate(50%,-50%);
+}
+
+ul.checked{
+    text-decoration: line-through;
+}
+
+ul.checked::before{
+    background-image: url(imagenes/checked.png);
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    left: 0px;
+    transform: translate(50%,-50%);
+}
+
+span{
+    right: 0;
+
+}
